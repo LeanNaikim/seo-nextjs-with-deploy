@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const ConfirmIcon = ({color = "#333" , classname="w-16 h-16  "}) => {
   return (
     <svg
