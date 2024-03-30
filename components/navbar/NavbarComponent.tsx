@@ -55,7 +55,12 @@ export default function NavbarComponent() {
 			<NavbarToggle />
 			<NavbarCollapse>
 				{menu.map((item, index) => (
-					<NavbarLink   as={Link} href={item.path} active={item.path === pathname}>
+					<NavbarLink  
+					key={index} 
+					    as={Link} 
+					    href={item.path} 
+					    active={item.path === pathname}
+						>
 						{item.name}
 					</NavbarLink>
 				))}

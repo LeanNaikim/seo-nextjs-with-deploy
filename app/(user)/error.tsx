@@ -1,6 +1,6 @@
 'use client'
  
-export default function Error({error, reset}: {error: Error, reset: () => void}) {
+export default function Error({error, reset}: {error: Error, reset: () => void}){
   return (
     <div className="h-screen grid place-content-center text-6xl">
       <h2 >Something went wrong!</h2>
