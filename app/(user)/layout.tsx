@@ -9,10 +9,10 @@ import {inter, suwannaphum , localCustomFont} from "./fonts";
 import { Metadata } from "next";
 
 export const metadata: Metadata ={
-    title: "Susu shop",
+    title: "Susu Shop Home",
 	description: "Susu shop is a web application for everone buying.",
 	openGraph: {
-		title: "Susu shop",
+		title: "Susu Shop Home",
 		description: "Susu shop is a web application for everone buying.",
 		images: 'https://store.istad.co/media/brand_images/skincare.webp'
 	}
@@ -31,7 +31,9 @@ export default function RootLayout({
 					<NavbarComponent />
 				</header>
 				<ErrorBoundary errorComponent={Error}>
-					<Suspense fallback={<Loading />}>{children}</Suspense>
+					<Suspense fallback={<Loading />}>
+						{children}
+					</Suspense>
 				</ErrorBoundary>
 			</body>
 		</html>
